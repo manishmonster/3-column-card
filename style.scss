@@ -1,11 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
+:root{
+    --luxury-color : #00403f;
+    --suv-color: #016972;
+    --sedans-color: #e28525;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 2em;
 }
-
+.main-container{
+    display: flex;
+    width: 60%;
+    margin: 10em auto 5em;
+}
+p{
+    font-weight: 500;
+}
+.card
+{
+    .card-title {
+        text-transform: uppercase;
+    }
+    padding: 3em 2em;
+    color: white;
+    a{
+        text-decoration: none;
+        background: white;
+        padding: 1em 2.5em;
+        border-radius: 100vh;
+        margin: 3em 0 0 0;
+        display: inline-block;
+        font-weight: 600;
+        &:hover{
+            background: transparent;
+            border: 2px solid white;
+            color: white !important;
+        }
+    }
+}
+#sedans{
+    background: var(--sedans-color);
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    a{
+        color: var(--sedans-color);
+    }
+}
+#suv{
+    background: var(--suv-color);
+    a{
+        color: var(--suv-color);;
+    }
+}
+#luxury{
+    background: var(--luxury-color);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    a{
+        color: var(--luxury-color);;
+    }
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
