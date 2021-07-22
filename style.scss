@@ -65,3 +65,41 @@ p{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (max-width: 1152px){
+    .main-container{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1077px){
+    .main-container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .main-container{
+        width: 86%;
+    }
+}
+@media screen and (max-width: 990px){
+    .main-container{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 860px){
+    .main-container{
+        display: block;
+        margin-top: 5em;
+    }
+    #sedans, #luxury{
+        border-radius: 0px;
+    }
+    #sedans{
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        
+    }
+    #luxury{
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+    }
+}
